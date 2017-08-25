@@ -1,0 +1,2 @@
+# szapp
+react-native-demo
