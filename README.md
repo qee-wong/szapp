@@ -1,8 +1,8 @@
 # szapp
 react-native-demo
 
- npm install 
+> npm install 
 
- gradlew.bat installDebug
+> gradlew.bat installDebug
 
- npm start
+> npm start
