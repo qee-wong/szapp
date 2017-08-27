@@ -45,12 +45,14 @@ export default class szapp extends Component {
           </Text>
         </TouchableOpacity>
 
+        <TouchableOpacity  onPress = {this.callna_button.bind(this)}>
+          <Text style={styles.instructions}>
+            To get to 原生 started, edit index.android.js
+          </Text>
+        </TouchableOpacity>
 
-        <Text style={styles.instructions}
-          onPress = {this.callna_button.bind(this)}
-        >
-          To get to 原生 started, edit index.android.js
-        </Text>
+
+        
         <Text style={styles.instructions}>
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
@@ -86,4 +88,5 @@ const styles = StyleSheet.create({
   },
 });
 
+console.log(AppRegistry.runApplication);
 AppRegistry.registerComponent('szapp', () => szapp);

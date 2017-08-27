@@ -46,8 +46,9 @@ public class RNToNativeActivity extends Activity implements View.OnClickListener
                 } else {
                     //绘ui代码,这里android6.0以下的系统直接绘出即可
                 }
-                Intent intent = new Intent(RNToNativeActivity.this,MyReactActivity.class);
-                startActivity(intent);
+               /* Intent intent = new Intent(RNToNativeActivity.this,MyReactActivity.class);
+                startActivity(intent);*/
+               super.onBackPressed();
                 break;
         }
     }

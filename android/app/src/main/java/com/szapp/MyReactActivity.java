@@ -13,6 +13,13 @@ public class MyReactActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "szapp";
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        onDestroy();
+    }
+
     /*private ReactRootView mReactRootView;
     private ReactInstanceManager mReactInstanceManager;
 //    private LinearLayout ll;
